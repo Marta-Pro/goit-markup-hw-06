@@ -760,10 +760,19 @@ img {
   line-height: 24px;
 
   letter-spacing: 0.04em;
+  border: #4d5ae5;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--secondary-brand-color);
 }
 .btn-icon {
   fill: #fff;
-  width: 16px;
+  width: 24px;
+  height: 20px;
 }
 .footer-form {
   display: flex;
@@ -863,7 +872,15 @@ img {
   border-radius: 4px;
   height: 40px;
   border: solid 1px #8e8f99;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-field input:hover,
+.form-field input:focus {
+  border-color: var(--secondary-brand-color);
+}
+
 .form-field label {
   margin-bottom: 4px;
 }
@@ -922,6 +939,12 @@ textarea::placeholder {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   align-self: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--secondary-brand-color);
 }
 .checkbox {
   -wekit-appearance: none;
