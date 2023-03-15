@@ -318,7 +318,7 @@
         </p>
 </div>
 <div class="footer-contacts">
-  <h3 class="social-media">Social media</h3>
+  <h3 class="footer-header">Social media</h3>
   <ul class="actions-footer">
                 <li><a href="" class="a-act-footer"> 
 <svg class="a-icon a-icon-footer " > 
@@ -342,8 +342,32 @@
                 </a></li>
               </ul>
 </div>
+
+<div class="footer-subscribe">
+<h3 class="footer-header">Subscribe</h3>
+<form action="" class="footer-form">
+<input class="footer-input form-input" type="email" name="mail" id="mail" placeholder="E-mail">
+<button type="submit" class="footer-btn">Subscribe
+<svg class="btn-icon" >
+  <use href="./images/icon.svg#subscribe-btn"></use>
+</svg>
+
+</button>
+</form>
+
+</div>
       </div>
+
+
+
     </footer>
+
+
+
+
+
+
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close> <svg class="close-icon" >
@@ -355,7 +379,7 @@
   <h2 class="form-header">Leave your contacts and we will call you back </h2>
   <div class="form-field">
   <label for="name"  class="form-label">Name</label>
-  <input type="text" name="name" id="name" class="form-input"/>
+  <input class="form-input" type="text" name="name" id="name" class="form-input"/>
 <span class="form-icon"><svg class="a-icon">
   <use href="./images/icon.svg#form-name"></use>
 </svg></span>
@@ -363,7 +387,7 @@
 
 <div class="form-field">
   <label for="tel" class="form-label">Phone</label>
-<input type="text" name="tel" id="tel">
+<input class="form-input" type="text" name="tel" id="tel">
 <span class="form-icon"><svg class="a-icon">
   <use href="./images/icon.svg#form-phone"></use>
 </svg></span>
@@ -371,7 +395,7 @@
 
 <div class="form-field">
 <label for="mail" class="form-label">Email</label>
-<input type="email" name="mail" id="mail">
+<input class="form-input" type="email" name="mail" id="mail">
 <span class="form-icon"><svg class="a-icon">
   <use href="./images/icon.svg#form-email"></use>
 </svg></span>
@@ -379,11 +403,14 @@
 
 <div class="form-field">
 <label for="comment" class="form-label">Comment</label>
-<textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Text input"></textarea>
+<textarea class="form-textarea form-input" name="comment" id="comment" cols="30" rows="10" placeholder="Text input"></textarea>
 </div>
 <div class="line-with-checkbox">
-<input type="checkbox" name="policy" id="policy">
-<label for="policy" class="form-label policy-label">I accept the terms and conditions of the Privacy Policy</label>
+
+<label for="policy" class="form-label policy-label">
+  <input type="checkbox" name="policy" id="policy" class="checkbox">
+  <span class="checkbox-icon"></span>
+  <p> I accept the terms and conditions of the <a href="" class="priv-policy">Privacy Policy</a> </p></label>
 </div>
 
 <button type="submit" class="form-btn">Send</button>
