@@ -655,6 +655,9 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.about-footer {
+  margin-right: 40px;
+}
 
 /*.foot-logo {
   text-align: left;
@@ -664,7 +667,7 @@ img {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  gap: 120px;
+  gap: 80px;
 }
 .footer-studio {
   color: var(--light-color);
@@ -848,25 +851,25 @@ img {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  padding-top: 72px;
+  padding-top: 0;
 }
 .form-header {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-align: center;
   letter-spacing: 0.02em;
-
+  padding-top: 72px;
   color: #2e2f42;
 }
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
   position: relative;
 }
+
 .form-field input {
   margin: 0;
   padding: 10px 19px 10px 38px;
@@ -884,6 +887,7 @@ img {
 
 .form-field label {
   margin-bottom: 4px;
+  margin-top: 8px;
 }
 .form-field:focus-within > .form-icon {
   fill: #4d5ae5;
@@ -898,21 +902,26 @@ img {
   width: 360px;
   height: 120px;
   padding: 8px 16px;
+  border-radius: 4px;
+  border-color: #8e8f99;
   resize: none;
 }
 textarea::placeholder {
   color: #8e8f99;
   font-size: 12px;
+  letter-spacing: 0.04em;
 }
 .line-with-checkbox {
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 .form-label {
   color: #8e8f99;
   font-size: 12px;
+
+  letter-spacing: 0.04em;
 }
 .policy-label {
   display: flex;
@@ -926,7 +935,7 @@ textarea::placeholder {
   transform: translateY(-50%);
   width: 12px;
   height: 12px;
-  margin: 9px 19px;
+  margin: 13px 19px;
   fill: black;
 }
 
