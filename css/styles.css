@@ -33,7 +33,9 @@ body {
   font-size: 16px;
   background-color: #ffffff;
 }
-
+.desktop-hidden {
+  display: none;
+}
 .list,
 .prt-list {
   list-style: none;
@@ -87,6 +89,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 18px;
   gap: 76px;
 }
 
@@ -994,4 +997,140 @@ textarea::placeholder {
 }
 .priv-policy {
   color: #4d5ae5;
+}
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .container {
+    width: 320px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .main-nav {
+    flex-direction: row;
+    gap: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+  .link-nav {
+    align-self: flex-start;
+    justify-self: flex-start;
+    gap: 0;
+    margin-right: auto;
+  }
+  .menu-burger {
+    width: 32px;
+    height: 22px;
+    background-color: #31d0aa;
+  }
+  .desc-item::before {
+    display: none;
+  }
+  .hero {
+    max-width: 480px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+  }
+  .hero-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 40px;
+    width: 320px;
+    text-align: center;
+  }
+  .container-for-descr {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .desc {
+    flex-direction: column;
+  }
+  .desc-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+    text-align: center;
+  }
+  .list.desc {
+    gap: 72px;
+  }
+  .main-cont {
+    flex-direction: column;
+    gap: 72px;
+  }
+  .customers-container {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .customer-list {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 72px;
+    align-items: center;
+    justify-content: center;
+  }
+  .customer-item {
+    flex-basis: 40%;
+  }
+  .about-footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-web {
+    align-self: center;
+  }
+  .container-footer {
+    width: 100%;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-header {
+    align-self: center;
+  }
+  .footer-subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-form {
+    flex-direction: column;
+  }
+  .footer-input {
+    margin: 0;
+    width: 95%;
+    align-self: center;
+    margin-bottom: 16px;
+  }
+  .footer-btn {
+    width: 165px;
+    align-self: center;
+  }
+  .footer {
+    padding-bottom: 96px;
+  }
 }
